@@ -3,41 +3,17 @@
 	padding:0px;
 	box-sizing:border-box;
 }
-.container{
+.holder{
 	display:flex;
 	flex-wrap:wrap;
-	flex-direction:row;
+	/* flex-direction:row; */
 	justify-content:space-around;
 	/* width:100vw;
 	height:100vh; */
 }
-.container-1{
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:row;
-	/* justify-content:space-around; */
-	/* width:100vw;
-	height:100vh; */
-}
-.third{
-	height:100px;
-	width:100px;
-	background-color:green;
-}
-#third{
-	flex-wrap:flex-start;
-}
-.second{
-	height:100px;
-	width:100px;
-	background-color:blue;
-}
-
-.first{
-	height:100px;
-	width:100px;
-	background-color:red;
-}
-h1{
-	
+.item {
+    flex: 1 0 auto;
+    margin: 0 5px; /* Adjust the spacing between items */
+    max-width: calc(50% - 10px); /* Ensure items don't exceed half the width of the container minus the margin */
+    box-sizing: border-box; /* Include padding and border in the item's total width */
 }
